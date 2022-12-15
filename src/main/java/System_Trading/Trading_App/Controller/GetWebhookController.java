@@ -26,4 +26,12 @@ public class GetWebhookController {
         return "";
     }
 
+    @PostMapping("webhook2")
+    public String getWebHook2(@RequestBody HashMap<String, Object> data)
+    {
+        System.out.println("position : " + data);
+
+        return "";
+    }
+
 }
